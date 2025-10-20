@@ -1,0 +1,287 @@
+LIBRARY CHATBOT - CUSTOMIZATION TEMPLATE
+=========================================
+
+Copy this information and use it to customize your chatbot.
+Replace the placeholder information in index.html with YOUR library's actual information.
+
+---
+
+SECTION 1: LIBRARY HOURS
+-------------------------
+Replace in index.html around line 240:
+
+Monday-Friday: [YOUR HOURS]
+Saturday: [YOUR HOURS]
+Sunday: [YOUR HOURS]
+
+Example:
+Monday-Friday: 7:00 AM - 11:00 PM
+Saturday: 9:00 AM - 7:00 PM
+Sunday: 12:00 PM - 9:00 PM
+Closed on major holidays
+
+---
+
+SECTION 2: LOCATIONS & FLOORS
+------------------------------
+Replace in index.html around line 250:
+
+1st Floor:
+- [AREA 1]
+- [AREA 2]
+- [AREA 3]
+
+2nd Floor:
+- [AREA 1]
+- [AREA 2]
+
+3rd Floor:
+- [AREA 1]
+
+Example:
+1st Floor:
+- Circulation Desk
+- Computer Commons
+- Reference & Information Services
+- Browsing Collection
+
+2nd Floor:
+- Group Study Rooms
+- Silent Study Area
+- Current Periodicals
+
+3rd Floor:
+- Special Collections & Archives
+- Rare Books Room
+
+---
+
+SECTION 3: CONTACT INFORMATION
+-------------------------------
+Replace in index.html (search for these phone numbers):
+
+Reference Desk: [PHONE]
+Circulation Desk: [PHONE]
+IT Support: [PHONE]
+Main Library: [PHONE]
+Email: [EMAIL]
+
+Example:
+Reference Desk: (740) 376-4599
+Circulation Desk: (740) 376-4600
+IT Support: (740) 376-4601
+Main Library: (740) 376-4500
+Email: library@marietta.edu
+
+---
+
+SECTION 4: WEBSITE URLS
+------------------------
+Replace in index.html (search for "library.edu"):
+
+Library Catalog: [URL]
+Databases Page: [URL]
+Study Room Booking: [URL]
+Your Account: [URL]
+Print Management: [URL]
+
+Example:
+Library Catalog: https://marietta.primo.exlibrisgroup.com
+Databases Page: https://library.marietta.edu/databases
+Study Room Booking: https://marietta.libcal.com/spaces
+Your Account: https://marietta.primo.exlibrisgroup.com/account
+Print Management: https://print.marietta.edu
+
+---
+
+SECTION 5: PRINTING COSTS
+--------------------------
+Replace in index.html around line 280:
+
+Black & white: [COST] per page
+Color: [COST] per page
+
+Example:
+Black & white: $0.05 per page
+Color: $0.25 per page
+
+---
+
+SECTION 6: STUDY ROOM DETAILS
+------------------------------
+Replace in index.html around line 295:
+
+Location: [FLOOR/AREA]
+Time slots: [DURATION]
+Room capacity: [PEOPLE]
+Booking website: [URL]
+
+Example:
+Location: 2nd floor, east wing
+Time slots: 2-hour blocks
+Room capacity: 4-8 people
+Booking website: https://marietta.libcal.com/spaces
+
+---
+
+SECTION 7: LOAN PERIODS
+------------------------
+Replace in index.html around line 325:
+
+Books: [DURATION]
+DVDs: [DURATION]
+Reserve items: [DURATION]
+
+Example:
+Books: 3 weeks (renewable twice)
+DVDs: 7 days (renewable once)
+Reserve items: 2 hours (non-renewable)
+
+---
+
+SECTION 8: FINE AMOUNTS
+------------------------
+Replace in index.html around line 330:
+
+Regular items: [AMOUNT] per day
+Reserve items: [AMOUNT] per hour
+Lost item fee: [POLICY]
+
+Example:
+Regular items: $0.25 per day
+Reserve items: $1.00 per hour
+Lost item fee: Replacement cost + $25 processing fee
+
+---
+
+SECTION 9: WIFI INFORMATION
+----------------------------
+Replace in index.html around line 340:
+
+Network name: [SSID]
+Password: [INFO]
+Guest access: [PROCEDURE]
+
+Example:
+Network name: Marietta-Library
+Password: Use your university credentials
+Guest access: Request guest pass at circulation desk
+
+---
+
+SECTION 10: COLORS (OPTIONAL)
+------------------------------
+Replace in index.html around line 12 in the :root section:
+
+--primary-color: [HEX CODE];
+--secondary-color: [HEX CODE];
+
+Example (using school colors):
+--primary-color: #003087;    /* Marietta Blue */
+--secondary-color: #C4122F;  /* Marietta Red */
+
+Common institutional color codes:
+- Navy Blue: #003087
+- Royal Blue: #0047AB
+- Crimson: #DC143C
+- Forest Green: #228B22
+- Purple: #6A0DAD
+- Orange: #FF8C00
+
+---
+
+SECTION 11: ADD YOUR OWN TOPICS
+--------------------------------
+To add completely new topics, add an intent to the knowledgeBase.intents array.
+
+Copy this template and fill in your information:
+
+{
+    tag: "[TOPIC_NAME]",
+    patterns: ["[KEYWORD1]", "[KEYWORD2]", "[KEYWORD3]"],
+    responses: [
+        "[YOUR RESPONSE HERE]"
+    ]
+},
+
+Example - Adding Information About Accessibility:
+
+{
+    tag: "accessibility",
+    patterns: ["accessible", "accessibility", "disability", "wheelchair", "elevator", "ada"],
+    responses: [
+        "**Accessibility Services:**\n\n♿ The library is fully ADA compliant\n🛗 Elevators available to all floors\n📚 Assistive technology in Computer Commons\n🅿️ Accessible parking in front lot\n\nFor accommodations, contact: accessibility@university.edu or (555) 123-9999"
+    ]
+},
+
+Example - Adding Information About Library Cards:
+
+{
+    tag: "library_card",
+    patterns: ["library card", "get a card", "card replacement", "lost card", "new card"],
+    responses: [
+        "**Library Cards:**\n\n🎓 Students & Faculty: Your university ID serves as your library card\n\n👥 Community Members: Visit circulation desk with photo ID and proof of address\n\n💳 Replacement Cards: $5 fee at circulation desk\n\nQuestions? Call (555) 123-4568"
+    ]
+},
+
+---
+
+SECTION 12: QUICK SEARCH & REPLACE
+-----------------------------------
+Use Notepad++'s Find & Replace (Ctrl+H) to quickly update:
+
+Find: (555) 123-4567
+Replace with: [YOUR REFERENCE DESK PHONE]
+
+Find: (555) 123-4568
+Replace with: [YOUR CIRCULATION PHONE]
+
+Find: library.edu
+Replace with: [YOUR LIBRARY DOMAIN]
+
+Find: 8:00 AM - 10:00 PM
+Replace with: [YOUR WEEKDAY HOURS]
+
+---
+
+CHECKLIST BEFORE GOING LIVE
+----------------------------
+□ Updated all phone numbers
+□ Updated all hours
+□ Updated all website URLs
+□ Updated location/floor information
+□ Updated printing costs
+□ Updated loan periods and fines
+□ Updated WiFi information
+□ Changed colors to match branding (optional)
+□ Added any custom topics needed
+□ Tested chatbot locally
+□ Checked all responses for accuracy
+
+---
+
+AFTER CUSTOMIZATION
+--------------------
+1. Save your edited index.html file
+2. Open it in a browser to test
+3. Ask the chatbot various questions
+4. Make sure all information is correct
+5. Upload to GitHub
+6. Enable GitHub Pages
+7. Test the live version
+8. Embed in your library website
+
+---
+
+MAINTENANCE REMINDERS
+---------------------
+□ Update hours for holidays/breaks
+□ Update phone numbers if they change
+□ Add new topics based on common questions
+□ Review and update URLs periodically
+□ Update staff names/departments if needed
+□ Check that policies are current
+
+---
+
+Questions? Review the README.md file for detailed instructions!
